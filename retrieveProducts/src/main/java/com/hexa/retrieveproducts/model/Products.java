@@ -5,6 +5,11 @@ import java.math.BigInteger;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
+/**
+ * This is a Bean object which will have informations about the product.
+ * @author Prabhakaran V
+ */
 @Document(collection = "mobileCollections")
 public class Products {  
   public BigInteger _id;
