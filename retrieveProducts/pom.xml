@@ -60,8 +60,33 @@
      	<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<dependencies>
+           		 <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>springloaded</artifactId>
+                <version>1.2.1.RELEASE</version>
+            </dependency>
+        </dependencies>
 			</plugin>
       </plugins>
+      
+      
     </pluginManagement>
+    
+    
   </build>
+  
+  <repositories>
+    <repository>
+        <id>spring-releases</id>
+        <url>https://repo.spring.io/libs-release</url>
+    </repository>
+</repositories>
+<pluginRepositories>
+    <pluginRepository>
+        <id>spring-releases</id>
+        <url>https://repo.spring.io/libs-release</url>
+    </pluginRepository>
+</pluginRepositories>
+  
 </project>
